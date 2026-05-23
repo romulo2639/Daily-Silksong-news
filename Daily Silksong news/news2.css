@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "h h h h h h h"
+    "n m m m m m m"
+    "n m m m m m m"
+    "n m m m m m m"
+    "n m m m m m m"
+    "f f f f f f f";
+  grid-template-columns: 1fr 8fr;
+}
+header {
+  background-image: url("my-re-design-of-the-banner-on-r-silksong-v0-8w4ta8xmassd1.png");
+  color: rgb(226, 230, 236);
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+h1 {
+  margin-left: 10px;
+  color: rgb(83, 0, 0);
+}
+#h {
+  margin-left: 650px;
+  font-size: 33px;
+}
+nav {
+  background-image: url("ddakzb9-b054c8a8-f56a-4b48-95b7-cc17f1831d70.png");
+  grid-area: n;
+}
+footer {
+  background-color: rgb(224, 222, 222);
+  grid-area: f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-top: 2px solid rgb(214, 63, 63);
+}
+main {
+  flex: 1;
+  font-size: 20px;
+  grid-area: m;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+main > h2 {
+  margin-left: 10px;
+}
+main > h4 {
+  margin-left: 10px;
+}
+.b {
+  border: solid 2px black;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(214, 63, 63);
+  color: rgb(226, 230, 236);
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+.b:hover {
+  border: solid 2px black;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(226, 230, 236);
+  color: black;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
